@@ -12,7 +12,7 @@ This roadmap delivers a fantasy vocabulary extraction pipeline in four phases. P
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Document Parsing** - Extract and normalize text from PDF and EPUB files
+- [x] **Phase 1: Document Parsing** - Extract and normalize text from PDF and EPUB files
 - [ ] **Phase 2: Vocabulary Extraction & Classification** - Extract terms and classify with Claude API
 - [ ] **Phase 3: Output & IP Review** - Generate per-document JSON, consolidate, and flag IP-encumbered terms
 - [ ] **Phase 4: Batch Processing** - Process document folders with progress tracking and resumability
@@ -32,9 +32,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md - Project setup, Pydantic models, and utility modules
-- [ ] 01-02-PLAN.md - PDF and EPUB parser implementation
-- [ ] 01-03-PLAN.md - OCR integration and CLI implementation
+- [x] 01-01-PLAN.md - Project setup, Pydantic models, and utility modules
+- [x] 01-02-PLAN.md - PDF and EPUB parser implementation
+- [x] 01-03-PLAN.md - OCR integration and CLI implementation
 
 ### Phase 2: Vocabulary Extraction & Classification
 **Goal**: Users can extract fantasy-relevant terms from text and receive richly classified vocabulary
@@ -90,11 +90,11 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Document Parsing | 0/3 | Planned | - |
+| 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
 | 2. Vocabulary Extraction & Classification | 0/TBD | Not started | - |
 | 3. Output & IP Review | 0/TBD | Not started | - |
 | 4. Batch Processing | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-03*
+*Last updated: 2026-02-03 - Phase 1 complete*

@@ -9,11 +9,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Document Parsing
 
-- [ ] **PARSE-01**: Extract text content from PDF files
-- [ ] **PARSE-02**: Extract text content from EPUB files
-- [ ] **PARSE-03**: Detect and use OCR fallback for scanned/image-based PDFs
-- [ ] **PARSE-04**: Normalize extracted text to common format (Markdown/TextBlocks)
-- [ ] **PARSE-05**: Handle font encoding issues gracefully
+- [x] **PARSE-01**: Extract text content from PDF files
+- [x] **PARSE-02**: Extract text content from EPUB files
+- [x] **PARSE-03**: Detect and use OCR fallback for scanned/image-based PDFs
+- [x] **PARSE-04**: Normalize extracted text to common format (Markdown/TextBlocks)
+- [x] **PARSE-05**: Handle font encoding issues gracefully
 
 ### Vocabulary Extraction
 
@@ -85,11 +85,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PARSE-01 | Phase 1 | Pending |
-| PARSE-02 | Phase 1 | Pending |
-| PARSE-03 | Phase 1 | Pending |
-| PARSE-04 | Phase 1 | Pending |
-| PARSE-05 | Phase 1 | Pending |
+| PARSE-01 | Phase 1 | Complete |
+| PARSE-02 | Phase 1 | Complete |
+| PARSE-03 | Phase 1 | Complete |
+| PARSE-04 | Phase 1 | Complete |
+| PARSE-05 | Phase 1 | Complete |
 | EXTRACT-01 | Phase 2 | Pending |
 | EXTRACT-02 | Phase 2 | Pending |
 | EXTRACT-03 | Phase 2 | Pending |
@@ -117,4 +117,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-03 after roadmap creation*
+*Last updated: 2026-02-03 - Phase 1 requirements complete*

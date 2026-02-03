@@ -2,11 +2,16 @@
 
 import typer
 
+from corpora.cli.parse import parse_command
+
 app = typer.Typer(
     name="corpora",
     help="Corpora: Extract vocabulary from documents into structured JSON",
     add_completion=False,
 )
+
+# Register subcommands
+app.command(name="parse")(parse_command)
 
 
 @app.callback(invoke_without_command=True)

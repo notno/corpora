@@ -29,11 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Scanned PDFs automatically fall back to OCR when native text extraction fails
   4. Extracted text is normalized to consistent format regardless of source format
   5. Font encoding issues produce warnings but do not crash processing
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md - Project setup, Pydantic models, and utility modules
+- [ ] 01-02-PLAN.md - PDF and EPUB parser implementation
+- [ ] 01-03-PLAN.md - OCR integration and CLI implementation
 
 ### Phase 2: Vocabulary Extraction & Classification
 **Goal**: Users can extract fantasy-relevant terms from text and receive richly classified vocabulary
@@ -89,7 +90,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Document Parsing | 0/TBD | Not started | - |
+| 1. Document Parsing | 0/3 | Planned | - |
 | 2. Vocabulary Extraction & Classification | 0/TBD | Not started | - |
 | 3. Output & IP Review | 0/TBD | Not started | - |
 | 4. Batch Processing | 0/TBD | Not started | - |

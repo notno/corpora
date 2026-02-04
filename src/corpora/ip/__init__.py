@@ -7,5 +7,6 @@ This module provides:
 """
 
 from corpora.ip.blocklist import IPBlocklist
+from corpora.ip.detector import detect_ip, flag_terms
 
-__all__ = ["IPBlocklist"]
+__all__ = ["IPBlocklist", "detect_ip", "flag_terms"]

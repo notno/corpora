@@ -83,7 +83,7 @@ Plans:
 **Plans**: 2 plans (2 waves)
 
 Plans:
-- [ ] 04-01-PLAN.md - Batch processor core (models, parallel executor, retry)
+- [x] 04-01-PLAN.md - Batch processor core (models, parallel executor, retry)
 - [ ] 04-02-PLAN.md - CLI integration with progress display and tests
 
 ## Progress
@@ -96,8 +96,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
 | 2. Vocabulary Extraction & Classification | 3/3 | ✓ Complete | 2026-02-04 |
 | 3. Output & IP Review | 4/4 | ✓ Complete | 2026-02-04 |
-| 4. Batch Processing | 0/2 | Not started | - |
+| 4. Batch Processing | 1/2 | In progress | - |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-04 - Phase 4 planned*
+*Last updated: 2026-02-04 - Completed 04-01-PLAN.md*

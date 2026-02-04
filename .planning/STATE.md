@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** Extract and classify fantasy vocabulary from source documents into structured, game-ready JSON
-**Current focus:** Phase 3 Complete - Ready for Phase 4 (Batch Processing)
+**Current focus:** Phase 4 (Batch Processing) - In Progress
 
 ## Current Position
 
-Phase: 3 of 4 (Output & IP Review) - COMPLETE
-Plan: 4 of 4 in current phase
-Status: Phase complete
-Last activity: 2026-02-04 - Completed 03-04-PLAN.md
+Phase: 4 of 4 (Batch Processing)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-04 - Completed 04-01-PLAN.md
 
-Progress: [##########] 100% (Phase 3)
+Progress: [###########-] 92% (11/12 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
+- Total plans completed: 11
 - Average duration: 4.4 min
-- Total execution time: 0.73 hours
+- Total execution time: 0.80 hours
 
 **By Phase:**
 
@@ -30,10 +30,11 @@ Progress: [##########] 100% (Phase 3)
 | 01-document-parsing | 3 | 8 min | 2.7 min |
 | 02-vocabulary-extraction | 3 | 27 min | 9.0 min |
 | 03-output-ip-review | 4 | 13 min | 3.3 min |
+| 04-batch-processing | 1 | 4 min | 4.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 03-01 (2 min), 03-02 (3 min), 03-03 (3 min), 03-04 (5 min)
-- Trend: Phase 03 plans consistently fast (~3-5 min each)
+- Last 5 plans: 03-02 (3 min), 03-03 (3 min), 03-04 (5 min), 04-01 (4 min)
+- Trend: Consistent execution speed (~3-5 min per plan)
 
 *Updated after each plan completion*
 
@@ -79,6 +80,9 @@ Recent decisions affecting current work:
 - [03-04]: Review queue sorted alphabetically by canonical
 - [03-04]: Automatic flagged.json on IP-flagged terms detection
 - [03-04]: CLI default blocklist: data/ip-blocklist.json
+- [04-01]: Full pipeline per document (not step batching) for simplicity
+- [04-01]: Independent worker backoff with tenacity (no shared rate limiter)
+- [04-01]: Sync API for classification in batch (parallel-friendly)
 
 ### Pending Todos
 
@@ -90,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-04T06:33:05Z
-Stopped at: Completed 03-04-PLAN.md (Phase 3 complete)
+Last session: 2026-02-04T20:41:28Z
+Stopped at: Completed 04-01-PLAN.md
 Resume file: None

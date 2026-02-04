@@ -12,27 +12,27 @@ See: .planning/PROJECT.md (updated 2026-02-03)
 Phase: 2 of 4 (Vocabulary Extraction & Classification)
 Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-02-04 - Completed 02-02-PLAN.md
+Last activity: 2026-02-04 - Completed 02-01-PLAN.md
 
-Progress: [#####-----] 50%
+Progress: [######----] 60%
 
 ## Performance Metrics
 
 **Velocity:**
 - Total plans completed: 5
-- Average duration: 4.2 min
-- Total execution time: 0.35 hours
+- Average duration: 5.4 min
+- Total execution time: 0.45 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-document-parsing | 3 | 8 min | 2.7 min |
-| 02-vocabulary-extraction | 2 | 13 min | 6.5 min |
+| 02-vocabulary-extraction | 2 | 19 min | 9.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-02 (2 min), 01-03 (3 min), 02-01 (4 min), 02-02 (9 min)
-- Trend: Increasing complexity
+- Last 5 plans: 01-02 (2 min), 01-03 (3 min), 02-02 (6 min), 02-01 (13 min)
+- Trend: Increasing complexity (NLP/API integration)
 
 *Updated after each plan completion*
 
@@ -56,6 +56,10 @@ Recent decisions affecting current work:
 - [01-03]: OCR uses PyMuPDF built-in Tesseract integration (get_textpage_ocr)
 - [01-03]: Exit codes follow sysexits.h convention (64-66 range)
 - [01-03]: Interactive prompt for OCR unless --yes or --no-ocr specified
+- [02-01]: spaCy en_core_web_sm with NER disabled for fast extraction
+- [02-01]: ~200 common English words filtered in addition to spaCy stopwords
+- [02-01]: Noun chunks filtered to 2-3 content words for phrase extraction
+- [02-01]: Deduplication by lemma to avoid redundant candidates
 - [02-02]: Claude Haiku 4.5 model for cost-efficient classification
 - [02-02]: Prompt caching with ephemeral cache_control
 - [02-02]: tenacity for exponential backoff on rate limits
@@ -70,6 +74,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-04T03:45:00Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-02-04T03:47:33Z
+Stopped at: Completed 02-01-PLAN.md
 Resume file: None

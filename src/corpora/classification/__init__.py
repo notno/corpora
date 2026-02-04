@@ -6,8 +6,10 @@ from corpora.classification.prompts import (
     build_user_prompt,
 )
 from corpora.classification.client import ClassificationClient
+from corpora.classification.batch import BatchClassifier
 
 __all__ = [
+    "BatchClassifier",
     "CLASSIFICATION_SYSTEM_PROMPT",
     "ClassificationClient",
     "build_batch_user_prompt",

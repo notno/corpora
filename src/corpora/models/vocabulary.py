@@ -104,7 +104,7 @@ class ClassifiedTerm(BaseModel):
     category: str = Field(description="Term category (spell, creature, item, etc.)")
     canonical: str = Field(description="Canonical/normalized form")
     mood: str = Field(description="Mood/tone (arcane, dark, heroic, etc.)")
-    energy: str = Field(description="Energy type if applicable")
+    energy: str = Field(default="", description="Energy type if applicable")
     confidence: float = Field(
         ge=0.0,
         le=1.0,

@@ -4,7 +4,9 @@
       "Bash(npm view:*)",
       "WebSearch",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(npx get-shit-done-cc --global)"
+      "Bash(npx get-shit-done-cc --global)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

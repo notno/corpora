@@ -50,7 +50,7 @@ class BatchClassifier:
         for i, (term, source, lemma, pos) in enumerate(terms):
             requests.append(
                 Request(
-                    custom_id=f"term-{i}-{source}",
+                    custom_id=f"term-{i}",
                     params=MessageCreateParamsNonStreaming(
                         model=self.MODEL,
                         max_tokens=self.MAX_TOKENS,
@@ -114,9 +114,8 @@ class BatchClassifier:
             Tuples of (index, {"error": str}) for failures
         """
         for result in self.client.messages.batches.results(batch_id):
-            # Extract index from custom_id "term-{i}-{source}"
-            parts = result.custom_id.split("-")
-            idx = int(parts[1]) if len(parts) >= 2 else 0
+            # Extract index from custom_id "term-{i}"
+            idx = int(result.custom_id.split("-")[1])
 
             if result.result.type == "succeeded":
                 content = result.result.message.content[0].text

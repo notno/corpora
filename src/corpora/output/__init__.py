@@ -5,6 +5,7 @@ from classified terms, manifest tracking for incremental updates, and
 consolidation of multiple vocabularies.
 """
 
+from corpora.output.consolidator import backup_and_write, consolidate_vocabularies
 from corpora.output.manifest import CorporaManifest, ManifestEntry
 from corpora.output.merger import ConsolidationSummary, merge_duplicates
 from corpora.output.models import (
@@ -26,4 +27,6 @@ __all__ = [
     "ManifestEntry",
     "ConsolidationSummary",
     "merge_duplicates",
+    "backup_and_write",
+    "consolidate_vocabularies",
 ]

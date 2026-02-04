@@ -10,28 +10,29 @@ See: .planning/PROJECT.md (updated 2026-02-03)
 ## Current Position
 
 Phase: 2 of 4 (Vocabulary Extraction & Classification)
-Plan: 0 of TBD in current phase
-Status: Ready to plan Phase 2
-Last activity: 2026-02-03 - Phase 1 verified complete
+Plan: 2 of 3 in current phase
+Status: In progress
+Last activity: 2026-02-04 - Completed 02-02-PLAN.md
 
-Progress: [###-------] 25%
+Progress: [#####-----] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 2.7 min
-- Total execution time: 0.13 hours
+- Total plans completed: 5
+- Average duration: 4.2 min
+- Total execution time: 0.35 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-document-parsing | 3 | 8 min | 2.7 min |
+| 02-vocabulary-extraction | 2 | 13 min | 6.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (3 min), 01-02 (2 min), 01-03 (3 min)
-- Trend: Stable
+- Last 5 plans: 01-02 (2 min), 01-03 (3 min), 02-01 (4 min), 02-02 (9 min)
+- Trend: Increasing complexity
 
 *Updated after each plan completion*
 
@@ -55,6 +56,9 @@ Recent decisions affecting current work:
 - [01-03]: OCR uses PyMuPDF built-in Tesseract integration (get_textpage_ocr)
 - [01-03]: Exit codes follow sysexits.h convention (64-66 range)
 - [01-03]: Interactive prompt for OCR unless --yes or --no-ocr specified
+- [02-02]: Claude Haiku 4.5 model for cost-efficient classification
+- [02-02]: Prompt caching with ephemeral cache_control
+- [02-02]: tenacity for exponential backoff on rate limits
 
 ### Pending Todos
 
@@ -66,6 +70,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-03T23:07:00Z
-Stopped at: Completed 01-03-PLAN.md (Phase 1 complete)
+Last session: 2026-02-04T03:45:00Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None

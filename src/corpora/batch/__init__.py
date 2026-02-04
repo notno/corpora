@@ -13,13 +13,16 @@ from corpora.batch.models import (
     DocumentResult,
     DocumentStatus,
 )
+from corpora.batch.processor import BatchProcessor, SUPPORTED_EXTENSIONS
 
 __all__ = [
     "BatchConfig",
+    "BatchProcessor",
     "BatchSummary",
     "DocumentResult",
     "DocumentStatus",
     "EXIT_NO_INPUT",
     "EXIT_PARTIAL",
     "EXIT_SUCCESS",
+    "SUPPORTED_EXTENSIONS",
 ]

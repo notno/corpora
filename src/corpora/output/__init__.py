@@ -6,6 +6,7 @@ consolidation of multiple vocabularies.
 """
 
 from corpora.output.manifest import CorporaManifest, ManifestEntry
+from corpora.output.merger import ConsolidationSummary, merge_duplicates
 from corpora.output.models import (
     VOCAB_SCHEMA_VERSION,
     VocabularyEntry,
@@ -23,4 +24,6 @@ __all__ = [
     "write_vocab_file",
     "CorporaManifest",
     "ManifestEntry",
+    "ConsolidationSummary",
+    "merge_duplicates",
 ]

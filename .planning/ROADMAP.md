@@ -46,12 +46,12 @@ Plans:
   3. Each term is classified with full schema (id, text, genre, intent, pos, axes, tags, category, canonical, mood, energy, source)
   4. Classification output validates against Pydantic schema without errors
   5. API rate limits are respected without manual intervention (automatic backoff)
-**Plans**: TBD
+**Plans**: 3 plans (2 waves)
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md - NLP extraction with spaCy (models, extractor, filters)
+- [ ] 02-02-PLAN.md - Claude API classification (client, batch, prompts)
+- [ ] 02-03-PLAN.md - CLI integration (extract command, preview, progress)
 
 ### Phase 3: Output & IP Review
 **Goal**: Users can generate per-document JSON, consolidate into master vocabulary, and review IP-flagged terms
@@ -90,11 +90,11 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
-| 2. Vocabulary Extraction & Classification | 0/TBD | Not started | - |
+| 1. Document Parsing | 3/3 | Complete | 2026-02-03 |
+| 2. Vocabulary Extraction & Classification | 0/3 | Planned | - |
 | 3. Output & IP Review | 0/TBD | Not started | - |
 | 4. Batch Processing | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-03 - Phase 1 complete*
+*Last updated: 2026-02-03 - Phase 2 planned*

@@ -74,7 +74,7 @@ def _load_blocklist(blocklist_path: Optional[Path], verbose: bool) -> Optional[I
         # Use default blocklist location
         default_path = Path("data/ip-blocklist.json")
         if default_path.exists():
-            blocklist = IPBlocklist.from_file(default_path)
+            blocklist = IPBlocklist(default_path)
             if verbose:
                 console.print(f"[cyan]Using blocklist: {default_path}[/cyan]")
             return blocklist
@@ -84,7 +84,7 @@ def _load_blocklist(blocklist_path: Optional[Path], verbose: bool) -> Optional[I
         console.print(f"[yellow]Warning: Blocklist not found: {blocklist_path}[/yellow]")
         return None
 
-    blocklist = IPBlocklist.from_file(blocklist_path)
+    blocklist = IPBlocklist(blocklist_path)
     if verbose:
         console.print(f"[cyan]Using blocklist: {blocklist_path}[/cyan]")
     return blocklist

@@ -1,0 +1,49 @@
+{
+  "dnd": [
+    "beholder",
+    "mind flayer",
+    "illithid",
+    "yuan-ti",
+    "githyanki",
+    "githzerai",
+    "forgotten realms",
+    "greyhawk",
+    "dragonlance",
+    "eberron",
+    "ravenloft",
+    "vecna",
+    "acererak",
+    "demogorgon",
+    "orcus",
+    "lolth",
+    "tiamat",
+    "bahamut"
+  ],
+  "warhammer": [
+    "space marine",
+    "adeptus",
+    "imperium",
+    "chaos marine",
+    "primarch",
+    "warp",
+    "tyranid",
+    "ork",
+    "necron",
+    "eldar",
+    "tau"
+  ],
+  "lotr": [
+    "hobbit",
+    "shire",
+    "mordor",
+    "gondor",
+    "rohan",
+    "moria",
+    "rivendell",
+    "balrog",
+    "nazgul",
+    "uruk-hai",
+    "silmaril",
+    "palantir"
+  ]
+}

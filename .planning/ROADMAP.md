@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Document Parsing** - Extract and normalize text from PDF and EPUB files
 - [x] **Phase 2: Vocabulary Extraction & Classification** - Extract terms and classify with Claude API
 - [x] **Phase 3: Output & IP Review** - Generate per-document JSON, consolidate, and flag IP-encumbered terms
-- [ ] **Phase 4: Batch Processing** - Process document folders with progress tracking and resumability
+- [x] **Phase 4: Batch Processing** - Process document folders with progress tracking and resumability
 
 ## Phase Details
 
@@ -84,7 +84,7 @@ Plans:
 
 Plans:
 - [x] 04-01-PLAN.md - Batch processor core (models, parallel executor, retry)
-- [ ] 04-02-PLAN.md - CLI integration with progress display and tests
+- [x] 04-02-PLAN.md - CLI integration with progress display and tests
 
 ## Progress
 
@@ -96,8 +96,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
 | 2. Vocabulary Extraction & Classification | 3/3 | ✓ Complete | 2026-02-04 |
 | 3. Output & IP Review | 4/4 | ✓ Complete | 2026-02-04 |
-| 4. Batch Processing | 1/2 | In progress | - |
+| 4. Batch Processing | 2/2 | ✓ Complete | 2026-02-04 |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-04 - Completed 04-01-PLAN.md*
+*Last updated: 2026-02-04 - v1 MILESTONE COMPLETE (all 4 phases)*

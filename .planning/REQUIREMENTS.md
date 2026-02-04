@@ -44,10 +44,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Batch Processing
 
-- [ ] **BATCH-01**: Process all documents in a specified folder
-- [ ] **BATCH-02**: Display progress (documents completed/remaining)
-- [ ] **BATCH-03**: Resume processing after interruption
-- [ ] **BATCH-04**: Process multiple documents in parallel
+- [x] **BATCH-01**: Process all documents in a specified folder
+- [x] **BATCH-02**: Display progress (documents completed/remaining)
+- [x] **BATCH-03**: Resume processing after interruption
+- [x] **BATCH-04**: Process multiple documents in parallel
 
 ## v2 Requirements
 
@@ -105,10 +105,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | IP-01 | Phase 3 | Complete |
 | IP-02 | Phase 3 | Complete |
 | IP-03 | Phase 3 | Complete |
-| BATCH-01 | Phase 4 | Pending |
-| BATCH-02 | Phase 4 | Pending |
-| BATCH-03 | Phase 4 | Pending |
-| BATCH-04 | Phase 4 | Pending |
+| BATCH-01 | Phase 4 | Complete |
+| BATCH-02 | Phase 4 | Complete |
+| BATCH-03 | Phase 4 | Complete |
+| BATCH-04 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 24 total
@@ -117,4 +117,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-04 - Phase 3 requirements complete*
+*Last updated: 2026-02-04 - v1 milestone complete (all 24 requirements)*

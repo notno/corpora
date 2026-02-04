@@ -2,6 +2,7 @@
 
 import typer
 
+from corpora.cli.batch import batch_command
 from corpora.cli.parse import parse_command
 from corpora.cli.extract import extract_command
 from corpora.cli.output import output_command, consolidate_command
@@ -13,6 +14,7 @@ app = typer.Typer(
 )
 
 # Register subcommands
+app.command(name="batch")(batch_command)
 app.command(name="parse")(parse_command)
 app.command(name="extract")(extract_command)
 app.command(name="output")(output_command)

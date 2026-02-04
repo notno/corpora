@@ -13,7 +13,7 @@ This roadmap delivers a fantasy vocabulary extraction pipeline in four phases. P
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Document Parsing** - Extract and normalize text from PDF and EPUB files
-- [ ] **Phase 2: Vocabulary Extraction & Classification** - Extract terms and classify with Claude API
+- [x] **Phase 2: Vocabulary Extraction & Classification** - Extract terms and classify with Claude API
 - [ ] **Phase 3: Output & IP Review** - Generate per-document JSON, consolidate, and flag IP-encumbered terms
 - [ ] **Phase 4: Batch Processing** - Process document folders with progress tracking and resumability
 
@@ -49,9 +49,9 @@ Plans:
 **Plans**: 3 plans (2 waves)
 
 Plans:
-- [ ] 02-01-PLAN.md - NLP extraction with spaCy (models, extractor, filters)
-- [ ] 02-02-PLAN.md - Claude API classification (client, batch, prompts)
-- [ ] 02-03-PLAN.md - CLI integration (extract command, preview, progress)
+- [x] 02-01-PLAN.md - NLP extraction with spaCy (models, extractor, filters)
+- [x] 02-02-PLAN.md - Claude API classification (client, batch, prompts)
+- [x] 02-03-PLAN.md - CLI integration (extract command, preview, progress)
 
 ### Phase 3: Output & IP Review
 **Goal**: Users can generate per-document JSON, consolidate into master vocabulary, and review IP-flagged terms
@@ -90,11 +90,11 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Document Parsing | 3/3 | Complete | 2026-02-03 |
-| 2. Vocabulary Extraction & Classification | 0/3 | Planned | - |
+| 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
+| 2. Vocabulary Extraction & Classification | 3/3 | ✓ Complete | 2026-02-04 |
 | 3. Output & IP Review | 0/TBD | Not started | - |
 | 4. Batch Processing | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-03 - Phase 2 planned*
+*Last updated: 2026-02-04 - Phase 2 complete*

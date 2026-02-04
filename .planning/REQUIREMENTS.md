@@ -17,17 +17,17 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Vocabulary Extraction
 
-- [ ] **EXTRACT-01**: Identify fantasy-relevant candidate words and phrases
-- [ ] **EXTRACT-02**: Extract nouns, verbs, and adjectives
-- [ ] **EXTRACT-03**: Extract multi-word expressions (2-4 words)
+- [x] **EXTRACT-01**: Identify fantasy-relevant candidate words and phrases
+- [x] **EXTRACT-02**: Extract nouns, verbs, and adjectives
+- [x] **EXTRACT-03**: Extract multi-word expressions (2-4 words)
 
 ### Classification
 
-- [ ] **CLASS-01**: Classify terms with full schema (id, text, genre, intent, pos, axes, tags, category, canonical, mood, energy, source)
-- [ ] **CLASS-02**: Validate output against Pydantic schema
-- [ ] **CLASS-03**: Implement rate limiting for Claude API
-- [ ] **CLASS-04**: Use Batch API for cost-efficient processing
-- [ ] **CLASS-05**: Implement prompt caching to reduce token usage
+- [x] **CLASS-01**: Classify terms with full schema (id, text, genre, intent, pos, axes, tags, category, canonical, mood, energy, source)
+- [x] **CLASS-02**: Validate output against Pydantic schema
+- [x] **CLASS-03**: Implement rate limiting for Claude API
+- [x] **CLASS-04**: Use Batch API for cost-efficient processing
+- [x] **CLASS-05**: Implement prompt caching to reduce token usage
 
 ### Output
 
@@ -90,14 +90,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PARSE-03 | Phase 1 | Complete |
 | PARSE-04 | Phase 1 | Complete |
 | PARSE-05 | Phase 1 | Complete |
-| EXTRACT-01 | Phase 2 | Pending |
-| EXTRACT-02 | Phase 2 | Pending |
-| EXTRACT-03 | Phase 2 | Pending |
-| CLASS-01 | Phase 2 | Pending |
-| CLASS-02 | Phase 2 | Pending |
-| CLASS-03 | Phase 2 | Pending |
-| CLASS-04 | Phase 2 | Pending |
-| CLASS-05 | Phase 2 | Pending |
+| EXTRACT-01 | Phase 2 | Complete |
+| EXTRACT-02 | Phase 2 | Complete |
+| EXTRACT-03 | Phase 2 | Complete |
+| CLASS-01 | Phase 2 | Complete |
+| CLASS-02 | Phase 2 | Complete |
+| CLASS-03 | Phase 2 | Complete |
+| CLASS-04 | Phase 2 | Complete |
+| CLASS-05 | Phase 2 | Complete |
 | OUTPUT-01 | Phase 3 | Pending |
 | OUTPUT-02 | Phase 3 | Pending |
 | OUTPUT-03 | Phase 3 | Pending |
@@ -117,4 +117,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-03 - Phase 1 requirements complete*
+*Last updated: 2026-02-04 - Phase 2 requirements complete*

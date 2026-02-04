@@ -31,16 +31,16 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Output
 
-- [ ] **OUTPUT-01**: Generate one JSON file per source document
-- [ ] **OUTPUT-02**: Consolidate per-document JSONs into master vocabulary
-- [ ] **OUTPUT-03**: Deduplicate entries and link variants to canonical forms
-- [ ] **OUTPUT-04**: Support incremental updates without full reprocessing
+- [x] **OUTPUT-01**: Generate one JSON file per source document
+- [x] **OUTPUT-02**: Consolidate per-document JSONs into master vocabulary
+- [x] **OUTPUT-03**: Deduplicate entries and link variants to canonical forms
+- [x] **OUTPUT-04**: Support incremental updates without full reprocessing
 
 ### IP Review
 
-- [ ] **IP-01**: Flag terms that may be IP-encumbered
-- [ ] **IP-02**: Support configurable blocklist of known IP terms
-- [ ] **IP-03**: Generate review queue output for human review
+- [x] **IP-01**: Flag terms that may be IP-encumbered
+- [x] **IP-02**: Support configurable blocklist of known IP terms
+- [x] **IP-03**: Generate review queue output for human review
 
 ### Batch Processing
 
@@ -98,13 +98,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CLASS-03 | Phase 2 | Complete |
 | CLASS-04 | Phase 2 | Complete |
 | CLASS-05 | Phase 2 | Complete |
-| OUTPUT-01 | Phase 3 | Pending |
-| OUTPUT-02 | Phase 3 | Pending |
-| OUTPUT-03 | Phase 3 | Pending |
-| OUTPUT-04 | Phase 3 | Pending |
-| IP-01 | Phase 3 | Pending |
-| IP-02 | Phase 3 | Pending |
-| IP-03 | Phase 3 | Pending |
+| OUTPUT-01 | Phase 3 | Complete |
+| OUTPUT-02 | Phase 3 | Complete |
+| OUTPUT-03 | Phase 3 | Complete |
+| OUTPUT-04 | Phase 3 | Complete |
+| IP-01 | Phase 3 | Complete |
+| IP-02 | Phase 3 | Complete |
+| IP-03 | Phase 3 | Complete |
 | BATCH-01 | Phase 4 | Pending |
 | BATCH-02 | Phase 4 | Pending |
 | BATCH-03 | Phase 4 | Pending |
@@ -117,4 +117,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-03*
-*Last updated: 2026-02-04 - Phase 2 requirements complete*
+*Last updated: 2026-02-04 - Phase 3 requirements complete*

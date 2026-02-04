@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Document Parsing** - Extract and normalize text from PDF and EPUB files
 - [x] **Phase 2: Vocabulary Extraction & Classification** - Extract terms and classify with Claude API
-- [ ] **Phase 3: Output & IP Review** - Generate per-document JSON, consolidate, and flag IP-encumbered terms
+- [x] **Phase 3: Output & IP Review** - Generate per-document JSON, consolidate, and flag IP-encumbered terms
 - [ ] **Phase 4: Batch Processing** - Process document folders with progress tracking and resumability
 
 ## Phase Details
@@ -66,10 +66,10 @@ Plans:
 **Plans**: 4 plans (3 waves)
 
 Plans:
-- [ ] 03-01-PLAN.md - Output foundation (models, vocab writer)
-- [ ] 03-02-PLAN.md - IP foundation (blocklist, detector)
-- [ ] 03-03-PLAN.md - Consolidation core (manifest, merger, consolidator)
-- [ ] 03-04-PLAN.md - Review queue and CLI integration
+- [x] 03-01-PLAN.md - Output foundation (models, vocab writer)
+- [x] 03-02-PLAN.md - IP foundation (blocklist, detector)
+- [x] 03-03-PLAN.md - Consolidation core (manifest, merger, consolidator)
+- [x] 03-04-PLAN.md - Review queue and CLI integration
 
 ### Phase 4: Batch Processing
 **Goal**: Users can process entire folders of documents with progress tracking and fault tolerance
@@ -92,11 +92,11 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Document Parsing | 3/3 | Complete | 2026-02-03 |
-| 2. Vocabulary Extraction & Classification | 3/3 | Complete | 2026-02-04 |
-| 3. Output & IP Review | 0/4 | Planned | - |
+| 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
+| 2. Vocabulary Extraction & Classification | 3/3 | ✓ Complete | 2026-02-04 |
+| 3. Output & IP Review | 4/4 | ✓ Complete | 2026-02-04 |
 | 4. Batch Processing | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-04 - Phase 3 planned*
+*Last updated: 2026-02-04 - Phase 3 complete*

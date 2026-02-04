@@ -10,10 +10,13 @@ from corpora.output.models import (
     VocabularyMetadata,
     VocabularyOutput,
 )
+from corpora.output.vocab_writer import compute_file_hash, write_vocab_file
 
 __all__ = [
     "VOCAB_SCHEMA_VERSION",
     "VocabularyEntry",
     "VocabularyMetadata",
     "VocabularyOutput",
+    "compute_file_hash",
+    "write_vocab_file",
 ]

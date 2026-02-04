@@ -63,11 +63,13 @@ Plans:
   3. Duplicate entries are merged with variants linked to canonical forms
   4. Incremental updates add new documents without reprocessing existing ones
   5. Terms potentially IP-encumbered are flagged for human review
-**Plans**: TBD
+**Plans**: 4 plans (3 waves)
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md - Output foundation (models, vocab writer)
+- [ ] 03-02-PLAN.md - IP foundation (blocklist, detector)
+- [ ] 03-03-PLAN.md - Consolidation core (manifest, merger, consolidator)
+- [ ] 03-04-PLAN.md - Review queue and CLI integration
 
 ### Phase 4: Batch Processing
 **Goal**: Users can process entire folders of documents with progress tracking and fault tolerance
@@ -90,11 +92,11 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
-| 2. Vocabulary Extraction & Classification | 3/3 | ✓ Complete | 2026-02-04 |
-| 3. Output & IP Review | 0/TBD | Not started | - |
+| 1. Document Parsing | 3/3 | Complete | 2026-02-03 |
+| 2. Vocabulary Extraction & Classification | 3/3 | Complete | 2026-02-04 |
+| 3. Output & IP Review | 0/4 | Planned | - |
 | 4. Batch Processing | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-04 - Phase 2 complete*
+*Last updated: 2026-02-04 - Phase 3 planned*

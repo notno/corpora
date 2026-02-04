@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** Extract and classify fantasy vocabulary from source documents into structured, game-ready JSON
-**Current focus:** Phase 2 Complete - Ready for Phase 3 (Consolidation & IP Review)
+**Current focus:** Phase 3 - Output & IP Review (Plan 01 Complete)
 
 ## Current Position
 
-Phase: 2 of 4 (Vocabulary Extraction & Classification)
-Plan: 3 of 3 in current phase
-Status: Phase complete
-Last activity: 2026-02-04 - Completed 02-03-PLAN.md
+Phase: 3 of 4 (Output & IP Review)
+Plan: 1 of 4 in current phase
+Status: In progress
+Last activity: 2026-02-04 - Completed 03-01-PLAN.md
 
-Progress: [########--] 75%
+Progress: [########=-] 78%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 5.2 min
-- Total execution time: 0.52 hours
+- Total plans completed: 7
+- Average duration: 4.7 min
+- Total execution time: 0.55 hours
 
 **By Phase:**
 
@@ -29,10 +29,11 @@ Progress: [########--] 75%
 |-------|-------|-------|----------|
 | 01-document-parsing | 3 | 8 min | 2.7 min |
 | 02-vocabulary-extraction | 3 | 27 min | 9.0 min |
+| 03-output-ip-review | 1 | 2 min | 2.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-03 (3 min), 02-01 (13 min), 02-02 (9 min), 02-03 (5 min)
-- Trend: Phase 02 more complex (NLP/API integration)
+- Last 5 plans: 02-01 (13 min), 02-02 (9 min), 02-03 (5 min), 03-01 (2 min)
+- Trend: Phase 03-01 fast (model definitions, no external deps)
 
 *Updated after each plan completion*
 
@@ -66,6 +67,9 @@ Recent decisions affecting current work:
 - [02-03]: Preview mode with cost estimation before API calls
 - [02-03]: Batch API default for 50% cost savings, --sync for synchronous
 - [02-03]: Rich progress bar for classification feedback
+- [03-01]: Schema version 1.0 for forward compatibility
+- [03-01]: MD5 hash with 64KB chunked reading for memory efficiency
+- [03-01]: ip_flag passthrough - vocab_writer preserves flags, does not check blocklist
 
 ### Pending Todos
 
@@ -77,6 +81,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-04T03:57:45Z
-Stopped at: Completed 02-03-PLAN.md (Phase 02 complete)
+Last session: 2026-02-04T06:18:48Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None

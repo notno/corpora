@@ -22,7 +22,7 @@ class BatchClassifier:
     Batches can contain up to 100k requests and typically complete within 1 hour.
     """
 
-    MODEL = "claude-haiku-4-5-20250929"
+    MODEL = "claude-3-5-haiku-20241022"
     MAX_TOKENS = 2048
     DEFAULT_BATCH_SIZE = 50  # Terms per batch request
 

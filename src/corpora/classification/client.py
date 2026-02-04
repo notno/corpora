@@ -22,7 +22,7 @@ class ClassificationClient:
     prompt caching enabled on the system prompt.
     """
 
-    MODEL = "claude-haiku-4-5-20250929"  # Cost-effective, 90% quality
+    MODEL = "claude-3-5-haiku-20241022"  # Cost-effective, fast
     MAX_TOKENS = 2048
 
     def __init__(self, api_key: Optional[str] = None):

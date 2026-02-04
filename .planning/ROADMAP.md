@@ -80,10 +80,11 @@ Plans:
   2. Progress display shows documents completed vs remaining
   3. Interrupted processing can resume from where it stopped
   4. Multiple documents can process in parallel for faster throughput
-**Plans**: TBD
+**Plans**: 2 plans (2 waves)
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md - Batch processor core (models, parallel executor, retry)
+- [ ] 04-02-PLAN.md - CLI integration with progress display and tests
 
 ## Progress
 
@@ -95,8 +96,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Document Parsing | 3/3 | ✓ Complete | 2026-02-03 |
 | 2. Vocabulary Extraction & Classification | 3/3 | ✓ Complete | 2026-02-04 |
 | 3. Output & IP Review | 4/4 | ✓ Complete | 2026-02-04 |
-| 4. Batch Processing | 0/TBD | Not started | - |
+| 4. Batch Processing | 0/2 | Not started | - |
 
 ---
 *Roadmap created: 2026-02-03*
-*Last updated: 2026-02-04 - Phase 3 complete*
+*Last updated: 2026-02-04 - Phase 4 planned*

@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-03)
 
 **Core value:** Extract and classify fantasy vocabulary from source documents into structured, game-ready JSON
-**Current focus:** Phase 3 - Output & IP Review (Plan 02 Complete)
+**Current focus:** Phase 3 - Output & IP Review (Plan 03 Complete)
 
 ## Current Position
 
 Phase: 3 of 4 (Output & IP Review)
-Plan: 2 of 4 in current phase
+Plan: 3 of 4 in current phase
 Status: In progress
-Last activity: 2026-02-04 - Completed 03-02-PLAN.md
+Last activity: 2026-02-04 - Completed 03-03-PLAN.md
 
-Progress: [########=-] 80%
+Progress: [#########=] 90%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 4.5 min
-- Total execution time: 0.60 hours
+- Total plans completed: 9
+- Average duration: 4.3 min
+- Total execution time: 0.65 hours
 
 **By Phase:**
 
@@ -29,11 +29,11 @@ Progress: [########=-] 80%
 |-------|-------|-------|----------|
 | 01-document-parsing | 3 | 8 min | 2.7 min |
 | 02-vocabulary-extraction | 3 | 27 min | 9.0 min |
-| 03-output-ip-review | 2 | 5 min | 2.5 min |
+| 03-output-ip-review | 3 | 8 min | 2.7 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (9 min), 02-03 (5 min), 03-01 (2 min), 03-02 (3 min)
-- Trend: Phase 03 plans fast (building on established patterns)
+- Last 5 plans: 02-03 (5 min), 03-01 (2 min), 03-02 (3 min), 03-03 (3 min)
+- Trend: Phase 03 plans consistently fast (~3 min each)
 
 *Updated after each plan completion*
 
@@ -73,6 +73,9 @@ Recent decisions affecting current work:
 - [03-02]: Dual detection: blocklist matching + classification-time detection
 - [03-02]: Franchise-organized JSON blocklist for user customization
 - [03-02]: Pre-compiled regex patterns for efficient multi-word matching
+- [03-03]: Manifest uses MD5 content hashes for change detection
+- [03-03]: Merge strategy: highest confidence entry as base, weighted axis average
+- [03-03]: Backup: both timestamped .bak AND simple .bak for easy restore
 
 ### Pending Todos
 
@@ -84,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-04T06:19:21Z
-Stopped at: Completed 03-02-PLAN.md
+Last session: 2026-02-04T06:25:26Z
+Stopped at: Completed 03-03-PLAN.md
 Resume file: None

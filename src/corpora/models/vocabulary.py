@@ -6,7 +6,7 @@ This module defines the data models for the hybrid NLP + Claude extraction pipel
 - ClassifiedTerm: Full vocabulary term with Claude classification
 """
 
-from typing import List, Literal, Tuple
+from typing import List, Literal, Optional, Tuple
 
 from pydantic import BaseModel, Field
 
@@ -113,4 +113,8 @@ class ClassifiedTerm(BaseModel):
     secondary_intents: List[str] = Field(
         default_factory=list,
         description="Alternative/secondary intents"
+    )
+    ip_flag: Optional[str] = Field(
+        default=None,
+        description="IP flag reason if term is potentially IP-encumbered (e.g., 'blocklist:dnd', 'classification:ip-suspect')"
     )

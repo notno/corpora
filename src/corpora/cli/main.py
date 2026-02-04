@@ -3,6 +3,7 @@
 import typer
 
 from corpora.cli.parse import parse_command
+from corpora.cli.extract import extract_command
 
 app = typer.Typer(
     name="corpora",
@@ -12,6 +13,7 @@ app = typer.Typer(
 
 # Register subcommands
 app.command(name="parse")(parse_command)
+app.command(name="extract")(extract_command)
 
 
 @app.callback(invoke_without_command=True)

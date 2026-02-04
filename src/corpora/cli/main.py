@@ -4,6 +4,7 @@ import typer
 
 from corpora.cli.parse import parse_command
 from corpora.cli.extract import extract_command
+from corpora.cli.output import output_command, consolidate_command
 
 app = typer.Typer(
     name="corpora",
@@ -14,6 +15,8 @@ app = typer.Typer(
 # Register subcommands
 app.command(name="parse")(parse_command)
 app.command(name="extract")(extract_command)
+app.command(name="output")(output_command)
+app.command(name="consolidate")(consolidate_command)
 
 
 @app.callback(invoke_without_command=True)

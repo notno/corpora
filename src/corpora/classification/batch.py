@@ -22,7 +22,7 @@ class BatchClassifier:
     Batches can contain up to 100k requests and typically complete within 1 hour.
     """
 
-    MODEL = "claude-3-5-haiku-20241022"
+    MODEL = "claude-haiku-4-5-20251001"
     MAX_TOKENS = 2048
     DEFAULT_BATCH_SIZE = 50  # Terms per batch request
 
@@ -118,7 +118,11 @@ class BatchClassifier:
             idx = int(result.custom_id.split("-")[1])
 
             if result.result.type == "succeeded":
-                content = result.result.message.content[0].text
+                content = result.result.message.content[0].text.strip()
+                # Strip markdown code blocks if present
+                if content.startswith("```"):
+                    lines = content.split("\n")
+                    content = "\n".join(lines[1:-1]) if lines[-1].strip() == "```" else "\n".join(lines[1:])
                 try:
                     data = json.loads(content)
                     data["source"] = source

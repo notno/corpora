@@ -200,7 +200,7 @@ class TestBatchClassifier:
         call_args = mock_client.messages.batches.create.call_args
         requests = call_args.kwargs["requests"]
         assert len(requests) == 1
-        assert requests[0]["params"]["model"] == "claude-3-5-haiku-20241022"
+        assert requests[0]["params"]["model"] == "claude-haiku-4-5-20251001"
 
     @patch("corpora.classification.batch.anthropic.Anthropic")
     def test_create_batch_uses_cache_control(self, mock_anthropic):

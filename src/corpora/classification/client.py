@@ -22,7 +22,7 @@ class ClassificationClient:
     prompt caching enabled on the system prompt.
     """
 
-    MODEL = "claude-3-5-haiku-20241022"  # Cost-effective, fast
+    MODEL = "claude-haiku-4-5-20251001"  # Cost-effective, fast
     MAX_TOKENS = 2048
 
     def __init__(self, api_key: Optional[str] = None):
@@ -77,8 +77,12 @@ class ClassificationClient:
             ],
         )
 
-        # Parse JSON response
-        content = response.content[0].text
+        # Parse JSON response (strip markdown code blocks if present)
+        content = response.content[0].text.strip()
+        if content.startswith("```"):
+            # Remove ```json or ``` prefix and trailing ```
+            lines = content.split("\n")
+            content = "\n".join(lines[1:-1]) if lines[-1].strip() == "```" else "\n".join(lines[1:])
         try:
             data = json.loads(content)
             # Add source if not in response

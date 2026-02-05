@@ -2,28 +2,41 @@
 
 ## What This Is
 
-A document processing pipeline that extracts fantasy-themed vocabulary from RPG sourcebooks (PDFs, EPUBs, DOCX) and outputs richly structured JSON data for use in games and applications. The system uses Claude API to classify extracted terms across multiple dimensions (genre, intent, mood, axes, etc.) and consolidates them into a deduplicated master vocabulary with IP-safe terminology.
+A document processing pipeline that extracts fantasy-themed vocabulary from RPG sourcebooks (PDFs, EPUBs) and outputs richly structured JSON data for use in games and applications. The system uses Claude API to classify extracted terms across multiple dimensions (genre, intent, mood, axes, etc.) and consolidates them into a deduplicated master vocabulary with IP-safe terminology.
 
 ## Core Value
 
 Extract and classify fantasy vocabulary from source documents into structured, game-ready JSON that can power vocabulary-dependent features in apps and games.
 
+## Current State
+
+**Version:** v1.0 MVP (shipped 2026-02-04)
+**Codebase:** 6,932 LOC Python
+**Tech stack:** Python 3.13, Pydantic v2, spaCy, PyMuPDF, Anthropic SDK, Typer, Rich
+
+**CLI Commands:**
+- `corpora parse` - Extract text from PDF/EPUB
+- `corpora extract` - Extract and classify vocabulary
+- `corpora output` - Write .vocab.json files
+- `corpora consolidate` - Merge vocab files into master
+- `corpora batch` - Process entire folders
+
 ## Requirements
 
 ### Validated
 
-(None yet — ship to validate)
+- Parse text from PDF and EPUB files — v1.0
+- Extract fantasy-relevant words and phrases (nouns, verbs, adjectives, multi-word phrases) — v1.0
+- Classify each term with rich metadata (id, text, genre, intent, pos, axes, tags, category, canonical, mood, energy, source) — v1.0
+- Output one JSON file per source document — v1.0
+- Consolidate all per-document JSONs into a master vocabulary — v1.0
+- Deduplicate entries and link variants to canonical forms — v1.0
+- Flag/identify IP-encumbered terms for review — v1.0
+- Support batch processing of document folders — v1.0
 
 ### Active
 
-- [ ] Parse text from PDF, EPUB, and DOCX files
-- [ ] Extract fantasy-relevant words and phrases (nouns, verbs, adjectives, multi-word phrases)
-- [ ] Classify each term with rich metadata (id, text, genre, intent, pos, axes, tags, category, canonical, mood, energy, source)
-- [ ] Output one JSON file per source document
-- [ ] Consolidate all per-document JSONs into a master vocabulary
-- [ ] Deduplicate entries and link variants to canonical forms
-- [ ] Flag/identify IP-encumbered terms for review and renaming
-- [ ] Support batch processing of document folders
+(None yet — define in next milestone)
 
 ### Out of Scope
 
@@ -31,6 +44,7 @@ Extract and classify fantasy vocabulary from source documents into structured, g
 - Local LLM inference — Claude API via Max subscription handles classification
 - Non-fantasy themes (Sci-Fi, Horror) — can add later, Fantasy first
 - GUI/web interface — CLI scripts are sufficient
+- DOCX support — deferred to v1.1
 
 ## Context
 
@@ -39,20 +53,19 @@ Extract and classify fantasy vocabulary from source documents into structured, g
 **Output schema example:**
 ```json
 {
-  "id": "srd-acid-arrow",
-  "text": "Corrosive Dart",
-  "source": "5e-srd",
+  "id": "spell-fireball",
+  "text": "Fireball",
+  "source": "Fantasy\\Arcane_Engineering.pdf",
   "genre": "fantasy",
   "intent": "offensive",
-  "pos": "phrase",
-  "axes": ["fire", "force", "light"],
-  "tags": ["evocation", "level-2"],
-  "category": "invocation",
-  "canonical": "corrosive dart",
+  "pos": "noun",
+  "axes": {"fire": 0.95, "force": 0.65, "air": 0.2, ...},
+  "tags": ["evocation", "area-effect", "classic"],
+  "category": "spell",
+  "canonical": "fireball",
   "mood": "arcane",
-  "energy": "acid",
-  "srdSource": true,
-  "old-text": "Acid Arrow"
+  "energy": "fire",
+  "confidence": 0.99
 }
 ```
 
@@ -72,9 +85,13 @@ Extract and classify fantasy vocabulary from source documents into structured, g
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Claude API over local LLM | Rich multi-dimensional classification needs high-quality model; CPU-only makes local inference slow and lower quality | — Pending |
-| Per-document JSON then consolidate | Allows incremental processing, resumability, and easier debugging vs. running list | — Pending |
-| Separate IP review step | Keeps extraction clean; IP detection is subjective and benefits from human review | — Pending |
+| Claude API over local LLM | Rich multi-dimensional classification needs high-quality model; CPU-only makes local inference slow | ✓ Good — classification quality excellent |
+| Per-document JSON then consolidate | Allows incremental processing, resumability, and easier debugging | ✓ Good — enables batch resume |
+| Separate IP review step | Keeps extraction clean; IP detection is subjective and benefits from human review | ✓ Good — clear separation |
+| Batch API for classification | 50% cost savings on bulk operations | ✓ Good — significant savings |
+| spaCy for NLP extraction | Fast, lightweight, good for noun/verb/phrase extraction | ✓ Good — ~200 common words filtered |
+| PyMuPDF for PDF parsing | Built-in OCR integration, proper reading order | ✓ Good — handles complex PDFs |
+| ThreadPoolExecutor for parallel processing | I/O-bound work benefits from threading | ✓ Good — scales to 8 workers |
 
 ---
-*Last updated: 2026-02-03 after initialization*
+*Last updated: 2026-02-04 after v1.0 milestone*
